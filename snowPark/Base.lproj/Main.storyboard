@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -67,25 +66,10 @@
                                             <constraint firstItem="ZE0-Li-snD" firstAttribute="top" secondItem="Ghg-Ex-0UA" secondAttribute="top" constant="250" id="bfb-in-S5x"/>
                                         </constraints>
                                     </scrollView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqp-zf-y7a">
-                                        <rect key="frame" x="-93" y="-50" width="200" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="EJb-Yz-3sw"/>
-                                        </constraints>
-                                        <state key="normal" title="Small image">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected" title="Large image"/>
-                                        <connections>
-                                            <action selector="onImageSizeToggleButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E7o-qr-Rvz"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Ghg-Ex-0UA" secondAttribute="trailing" id="1FG-HO-Yw8"/>
-                                    <constraint firstItem="Lqp-zf-y7a" firstAttribute="leading" secondItem="JZd-kP-uvH" secondAttribute="leadingMargin" constant="10" id="IDI-qe-zUj"/>
                                     <constraint firstItem="Ghg-Ex-0UA" firstAttribute="leading" secondItem="JZd-kP-uvH" secondAttribute="leading" id="XLK-mQ-afT"/>
                                 </constraints>
                             </view>
@@ -98,7 +82,6 @@
                         <outlet property="imageConstraintLeft" destination="0Vr-PX-Jgs" id="nOo-7M-Pnt"/>
                         <outlet property="imageConstraintRight" destination="1Rq-4O-788" id="02c-zI-sJD"/>
                         <outlet property="imageConstraintTop" destination="bfb-in-S5x" id="6Eg-pb-kUl"/>
-                        <outlet property="imageSizeToggleButton" destination="Lqp-zf-y7a" id="Rdh-Zl-FwH"/>
                         <outlet property="imageView" destination="ZE0-Li-snD" id="nRn-3X-Ssv"/>
                         <outlet property="scrollView" destination="Ghg-Ex-0UA" id="j5H-Ah-ful"/>
                     </connections>
