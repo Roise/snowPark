@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="201.5" y="260.5"/>
         </scene>
-        <!--Youtube Controller-->
+        <!--Youtube View Controller-->
         <scene sceneID="6hu-Ah-bKE">
             <objects>
-                <viewController id="b4C-hn-RzL" customClass="YoutubeController" customModule="snowPark" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="b4C-hn-RzL" customClass="YoutubeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rgq-dK-R4i"/>
                         <viewControllerLayoutGuide type="bottom" id="Fnt-pL-Qty"/>
@@ -110,10 +110,33 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="nZm-I1-uYj"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uY8-Ka-tCb" customClass="YTPlayerView">
+                                <rect key="frame" x="19" y="137" width="335" height="409"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7P-x3-rTB">
+                                <rect key="frame" x="55" y="575" width="79" height="38"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playVideo:" destination="b4C-hn-RzL" eventType="touchUpInside" id="mrA-Li-cIk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAR-a1-ggh">
+                                <rect key="frame" x="243" y="579" width="78" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopVideo:" destination="b4C-hn-RzL" eventType="touchUpInside" id="eyV-6Q-Aqp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="playerView" destination="uY8-Ka-tCb" id="bOz-NJ-Iq6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VhU-GU-Pb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -14,6 +14,7 @@ class ViewControllerEx: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
 //        let pinch = UIPinchGestureRecognizer(target: self, action: #selector(ViewControllerEx.doPinch(_:)))
 //        self.view.addGestureRecognizer(pinch)
     }
